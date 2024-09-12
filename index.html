@@ -36,46 +36,37 @@
             border-radius: 10px;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .introduction {
-            text-align: center;
-        }
-        .introduction img {
-            max-width: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
         h2 {
             color: #0066cc;
             margin-bottom: 20px;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            justify-items: center;
         }
-        ul li {
+        .social-grid a {
+            text-decoration: none;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+        .social-grid a:hover {
+            transform: translateY(-10px);
+        }
+        .social-grid img {
+            max-width: 50px;
+            height: auto;
             margin-bottom: 10px;
         }
-        ul li a {
-            text-decoration: none;
-            color: #0066cc;
+        .social-grid p {
+            color: #333;
             font-weight: bold;
-        }
-        ul li a:hover {
-            color: #ff6600;
-        }
-        .preview {
-            display: none;
-            background-color: #f4f4f4;
-            padding: 15px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .client-review {
-            background-color: #e8f5e9;
-            padding: 20px;
-            border-left: 5px solid #66bb6a;
-            margin-top: 20px;
+            font-size: 0.9rem;
         }
         footer {
             background-color: #0066cc;
@@ -101,39 +92,41 @@
 </header>
 
 <div class="container">
-    <section class="introduction">
-        <img src="IMG_20220508.png" alt="IfiokAbasi Okop">
-        <h2>Introduction</h2>
-        <p>Hi, I'm IfiokAbasi Okop, a multi-faceted content marketer and broadcast journalist with a passion for crafting compelling stories for business.</p>
-        <p>My experience spanning e-commerce, media, and real estate industries has equipped me with a unique ability to simplify complex ideas and create engaging content that resonates with diverse audiences.</p>
-        <p>As a skilled storyteller, I leverage strategic content marketing to drive results and help businesses achieve their goals.</p>
-    </section>
-
     <section class="links">
         <h2>Find Me Online</h2>
-        <ul>
-            <li><a href="https://www.linkedin.com/in/ifiokabasi-okop/" target="_blank" data-preview="LinkedIn Profile">My LinkedIn Profile</a></li>
-            <li><a href="https://medium.com/@ifiokabasiokop" target="_blank" data-preview="Medium Blog">My Medium Blog</a></li>
-            <li><a href="https://www.livefromnaija.com/lift-of-twitter-ban-future-implication-for-nigerian-app-users-and-company/" target="_blank" data-preview="Published Article">Published Article: Future Implication for Nigerian App Users</a></li>
-            <li><a href="https://www.livefromnaija.com/top-nollywood-movies-of-2021-livefromnaijas-picks/" target="_blank" data-preview="Top Nollywood Movies">Published Article: Top Nollywood Movies of 2021</a></li>
-            <li><a href="https://web.facebook.com/ifiokabasi.okop/" target="_blank" data-preview="Facebook Profile">My Facebook Profile</a></li>
-            <li><a href="https://www.bbc.co.uk/programmes/m000m5lt" target="_blank" data-preview="BBC Poem">Poem Featured on BBC</a></li>
-            <li><a href="https://kalaharireview.com/a-year-of-two-4fe8a177e6a7" target="_blank" data-preview="Kalahari Review Story">Non-fiction Story Published on Kalahari Review</a></li>
-            <li><a href="https://pacesetterfrontier.com/post/3966/governor-udom-emmanuels-developmental-strides-in-akwa-ibom-state" target="_blank" data-preview="Pacesetter Frontier Article">Article Published on Pacesetter Frontier</a></li>
-        </ul>
-        <div class="preview" id="preview-box"></div>
-    </section>
-
-    <section class="reviews">
-        <h2>Client Review</h2>
-        <div class="client-review">
-            <h3>Review from a client</h3>
-            <p>It was 2023, and I was looking to get employed but I didn't have a CV. I checked online on how to write one, but I still wasn't getting it. There were many templates that I used but it just wasn't sitting well.</p>
-            <p>When I told Ifiok about it, she put me through step by step till I got it right. She sent me a template, and walked me through the process of writing the CV, asking very crucial questions to help strengthen the quality of my CV. I sent different drafts, she'd send it back making corrections, I'd effect the corrections and send it back again. There was a lot of back and forth before we finally settled on the one I used.</p>
-            <p>In my very first job interview, the interviewer mentioned specifically that it was my CV that drew him to me even though I didn't have the experiences they were looking for. He commented that it was such a good CV and he loved it.</p>
-            <p>Eventually, I got a job using that CV Ifiok helped me write.</p>
-            <p>Ifiok knows her onions well, and I'm a witness to that.</p>
-            <p><strong>- Moyosoluwa Olotu</strong></p>
+        <div class="social-grid">
+            <a href="https://www.linkedin.com/in/ifiokabasi-okop/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn Logo">
+                <p>LinkedIn</p>
+            </a>
+            <a href="https://medium.com/@ifiokabasiokop" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/5968/5968906.png" alt="Medium Logo">
+                <p>Medium</p>
+            </a>
+            <a href="https://www.livefromnaija.com/lift-of-twitter-ban-future-implication-for-nigerian-app-users-and-company/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2301/2301126.png" alt="Article Logo">
+                <p>LiveFromNaija</p>
+            </a>
+            <a href="https://www.livefromnaija.com/top-nollywood-movies-of-2021-livefromnaijas-picks/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2301/2301126.png" alt="Article Logo">
+                <p>Nollywood Movies</p>
+            </a>
+            <a href="https://web.facebook.com/ifiokabasi.okop/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook Logo">
+                <p>Facebook</p>
+            </a>
+            <a href="https://www.bbc.co.uk/programmes/m000m5lt" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732223.png" alt="BBC Logo">
+                <p>BBC Poem</p>
+            </a>
+            <a href="https://kalaharireview.com/a-year-of-two-4fe8a177e6a7" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/3323/3323085.png" alt="Kalahari Review Logo">
+                <p>Kalahari Review</p>
+            </a>
+            <a href="https://pacesetterfrontier.com/post/3966/governor-udom-emmanuels-developmental-strides-in-akwa-ibom-state" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/2301/2301126.png" alt="Pacesetter Frontier Logo">
+                <p>Pacesetter Frontier</p>
+            </a>
         </div>
     </section>
 </div>
@@ -141,23 +134,6 @@
 <footer>
     <p>&copy; 2024 IfiokAbasi Okop. All rights reserved.</p>
 </footer>
-
-<script>
-    const links = document.querySelectorAll('a[data-preview]');
-    const previewBox = document.getElementById('preview-box');
-
-    links.forEach(link => {
-        link.addEventListener('mouseover', function () {
-            const previewText = this.getAttribute('data-preview');
-            previewBox.style.display = 'block';
-            previewBox.innerHTML = `<strong>Preview:</strong> ${previewText}`;
-        });
-
-        link.addEventListener('mouseout', function () {
-            previewBox.style.display = 'none';
-        });
-    });
-</script>
 
 </body>
 </html>
