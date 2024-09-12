@@ -40,6 +40,20 @@
             color: #0066cc;
             margin-bottom: 20px;
         }
+        .about-me {
+            margin-bottom: 40px;
+        }
+        .about-me img {
+            max-width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .about-me p {
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
         .social-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -68,13 +82,18 @@
             font-weight: bold;
             font-size: 0.9rem;
         }
+        .client-review {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-left: 5px solid #66bb6a;
+            margin-top: 20px;
+        }
         footer {
             background-color: #0066cc;
             color: #fff;
             text-align: center;
             padding: 10px 0;
-            position: fixed;
-            bottom: 0;
+            position: relative;
             width: 100%;
         }
         @media (max-width: 768px) {
@@ -92,6 +111,15 @@
 </header>
 
 <div class="container">
+    <!-- About Me Section -->
+    <section class="about-me">
+        <img src="your-image-url.jpg" alt="IfiokAbasi Okop">
+        <h2>About Me</h2>
+        <p>Hi, I'm IfiokAbasi Okop, a multi-faceted content marketer and broadcast journalist with a passion for crafting compelling stories for business. My experience spans e-commerce, media, and real estate industries, where I simplify complex ideas to create engaging content that resonates with diverse audiences.</p>
+        <p>As a skilled storyteller, I use strategic content marketing to drive results and help businesses achieve their goals. I love solving problems through content, and my experience reflects my dedication to the craft.</p>
+    </section>
+
+    <!-- Find Me Online Section -->
     <section class="links">
         <h2>Find Me Online</h2>
         <div class="social-grid">
@@ -129,11 +157,42 @@
             </a>
         </div>
     </section>
+
+    <!-- Client Review Section -->
+    <section class="reviews">
+        <h2>Client Review</h2>
+        <div class="client-review">
+            <h3>Review from a client</h3>
+            <p>It was 2023, and I was looking to get employed but I didn't have a CV. I checked online on how to write one, but I still wasn't getting it. There were many templates that I used but it just wasn't sitting well.</p>
+            <p>When I told Ifiok about it, she put me through step by step till I got it right. She sent me a template, and walked me through the process of writing the CV, asking very crucial questions to help strengthen the quality of my CV. I sent different drafts, she'd send it back making corrections, I'd effect the corrections and send it back again. There was a lot of back and forth before we finally settled on the one I used.</p>
+            <p>In my very first job interview, the interviewer mentioned specifically that it was my CV that drew him to me even though I didn't have the experiences they were looking for. He commented that it was such a good CV and he loved it.</p>
+            <p>Eventually, I got a job using that CV Ifiok helped me write.</p>
+            <p>Ifiok knows her onions well, and I'm a witness to that.</p>
+            <p><strong>- Moyosoluwa Olotu</strong></p>
+        </div>
+    </section>
 </div>
 
 <footer>
     <p>&copy; 2024 IfiokAbasi Okop. All rights reserved.</p>
 </footer>
+
+<script>
+    const links = document.querySelectorAll('a[data-preview]');
+    const previewBox = document.getElementById('preview-box');
+
+    links.forEach(link => {
+        link.addEventListener('mouseover', function () {
+            const previewText = this.getAttribute('data-preview');
+            previewBox.style.display = 'block';
+            previewBox.innerHTML = `<strong>Preview:</strong> ${previewText}`;
+        });
+
+        link.addEventListener('mouseout', function () {
+            previewBox.style.display = 'none';
+        });
+    });
+</script>
 
 </body>
 </html>
