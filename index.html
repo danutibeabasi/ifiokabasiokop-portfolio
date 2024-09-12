@@ -7,103 +7,154 @@
     <title>IfiokAbasi Okop | Content Marketer & Journalist</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #f9f9f9;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            line-height: 1.6;
+            color: #333;
         }
         header {
-            background-color: #333;
+            background-color: #0066cc;
             color: #fff;
-            padding: 20px;
+            padding: 40px 0;
             text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
         }
         .container {
             width: 80%;
-            margin: 0 auto;
+            margin: 20px auto;
             padding: 20px;
-        }
-        h1, h2 {
-            color: #333;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
         .introduction {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .introduction img {
+            max-width: 150px;
+            border-radius: 50%;
             margin-bottom: 20px;
         }
-        .links, .reviews {
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        h2 {
+            color: #0066cc;
             margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #0066cc;
+            font-weight: bold;
+        }
+        ul li a:hover {
+            color: #ff6600;
+        }
+        .preview {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .client-review {
+            background-color: #e8f5e9;
+            padding: 20px;
+            border-left: 5px solid #66bb6a;
+            margin-top: 20px;
         }
         footer {
-            background-color: #333;
+            background-color: #0066cc;
             color: #fff;
             text-align: center;
-            padding: 10px;
-            position: relative;
+            padding: 10px 0;
+            position: fixed;
             bottom: 0;
             width: 100%;
         }
-        .profile-image {
-            max-width: 200px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto 20px;
-        }
-        a {
-            color: #0073e6;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+            }
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>IfiokAbasi Okop</h1>
-        <p>Content Marketer & Broadcast Journalist</p>
-    </header>
+<header>
+    <h1>IfiokAbasi Okop</h1>
+    <p>Content Marketer & Broadcast Journalist</p>
+</header>
 
-    <div class="container">
-        <section class="introduction">
-            <img src="your-image-url.jpg" alt="Profile Image" class="profile-image">
-            <h2>Introduction</h2>
-            <p>Hi, I'm IfiokAbasi Okop, a multi-faceted content marketer and broadcast journalist with a passion for crafting compelling stories for business.</p>
-            <p>My experience spanning e-commerce, media, and real estate industries has equipped me with a unique ability to simplify complex ideas and create engaging content that resonates with diverse audiences.</p>
-            <p>As a skilled storyteller, I leverage strategic content marketing to drive results and help businesses achieve their goals.</p>
-        </section>
+<div class="container">
+    <section class="introduction">
+        <img src="your-image-url.jpg" alt="IfiokAbasi Okop">
+        <h2>Introduction</h2>
+        <p>Hi, I'm IfiokAbasi Okop, a multi-faceted content marketer and broadcast journalist with a passion for crafting compelling stories for business.</p>
+        <p>My experience spanning e-commerce, media, and real estate industries has equipped me with a unique ability to simplify complex ideas and create engaging content that resonates with diverse audiences.</p>
+        <p>As a skilled storyteller, I leverage strategic content marketing to drive results and help businesses achieve their goals.</p>
+    </section>
 
-        <section class="links">
-            <h2>Find Me Online</h2>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/ifiokabasi-okop/" target="_blank">My LinkedIn Profile</a></li>
-                <li><a href="https://medium.com/@ifiokabasiokop" target="_blank">My Medium Blog</a></li>
-                <li><a href="https://www.livefromnaija.com/lift-of-twitter-ban-future-implication-for-nigerian-app-users-and-company/" target="_blank">Published Article - Future Implication for Nigerian App Users</a></li>
-                <li><a href="https://www.livefromnaija.com/top-nollywood-movies-of-2021-livefromnaijas-picks/" target="_blank">Published Article - Top Nollywood Movies of 2021</a></li>
-                <li><a href="https://web.facebook.com/ifiokabasi.okop/" target="_blank">My Facebook Profile</a></li>
-                <li><a href="https://www.bbc.co.uk/programmes/m000m5lt" target="_blank">Poem Featured on BBC</a></li>
-                <li><a href="https://kalaharireview.com/a-year-of-two-4fe8a177e6a7" target="_blank">Non-fiction Story Published on Kalahari Review</a></li>
-                <li><a href="https://pacesetterfrontier.com/post/3966/governor-udom-emmanuels-developmental-strides-in-akwa-ibom-state" target="_blank">Article Published on Pacesetter Frontier</a></li>
-            </ul>
-        </section>
+    <section class="links">
+        <h2>Find Me Online</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/ifiokabasi-okop/" target="_blank" data-preview="LinkedIn Profile">My LinkedIn Profile</a></li>
+            <li><a href="https://medium.com/@ifiokabasiokop" target="_blank" data-preview="Medium Blog">My Medium Blog</a></li>
+            <li><a href="https://www.livefromnaija.com/lift-of-twitter-ban-future-implication-for-nigerian-app-users-and-company/" target="_blank" data-preview="Published Article">Published Article: Future Implication for Nigerian App Users</a></li>
+            <li><a href="https://www.livefromnaija.com/top-nollywood-movies-of-2021-livefromnaijas-picks/" target="_blank" data-preview="Top Nollywood Movies">Published Article: Top Nollywood Movies of 2021</a></li>
+            <li><a href="https://web.facebook.com/ifiokabasi.okop/" target="_blank" data-preview="Facebook Profile">My Facebook Profile</a></li>
+            <li><a href="https://www.bbc.co.uk/programmes/m000m5lt" target="_blank" data-preview="BBC Poem">Poem Featured on BBC</a></li>
+            <li><a href="https://kalaharireview.com/a-year-of-two-4fe8a177e6a7" target="_blank" data-preview="Kalahari Review Story">Non-fiction Story Published on Kalahari Review</a></li>
+            <li><a href="https://pacesetterfrontier.com/post/3966/governor-udom-emmanuels-developmental-strides-in-akwa-ibom-state" target="_blank" data-preview="Pacesetter Frontier Article">Article Published on Pacesetter Frontier</a></li>
+        </ul>
+        <div class="preview" id="preview-box"></div>
+    </section>
 
-        <section class="reviews">
-            <h2>Client Review</h2>
+    <section class="reviews">
+        <h2>Client Review</h2>
+        <div class="client-review">
             <p>"It was 2023, I was looking to get employed but I didn't have a CV. I checked online on how to write one, but I still wasn't getting it. There were many templates that I used but it just wasn't sitting well.</p>
-            <p>Then Dianaabasi, Ifiok's elder sister referred her to me. When I told Ifi about it, she put me through step by step till I got it. She sent me a template, and walked me through the process of writing the CV, asking very crucial questions to help strengthen the quality of my CV.</p>
-            <p>In my very first job interview, the interviewer mentioned specifically that it was my CV that drew him to me even though I didn't have the experiences they were looking for. He commented that it was such a good CV and he loved it.</p>
+            <p>Then Dianaabasi, Ifiok's elder sister, referred her to me. When I told Ifi about it, she put me through step by step till I got it. She sent me a template and walked me through the process of writing the CV, asking very crucial questions to help strengthen the quality of my CV.</p>
+            <p>In my very first job interview, the interviewer mentioned specifically that it was my CV that drew him to me, even though I didn't have the experiences they were looking for. He commented that it was such a good CV and he loved it.</p>
             <p>Ifi knows her onions really well, and I'm a witness to that." - Moyosoluwa Olotu</p>
-        </section>
-    </div>
+        </div>
+    </section>
+</div>
 
-    <footer>
-        <p>&copy; 2024 IfiokAbasi Okop. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 IfiokAbasi Okop. All rights reserved.</p>
+</footer>
+
+<script>
+    const links = document.querySelectorAll('a[data-preview]');
+    const previewBox = document.getElementById('preview-box');
+
+    links.forEach(link => {
+        link.addEventListener('mouseover', function () {
+            const previewText = this.getAttribute('data-preview');
+            previewBox.style.display = 'block';
+            previewBox.innerHTML = `<strong>Preview:</strong> ${previewText}`;
+        });
+
+        link.addEventListener('mouseout', function () {
+            previewBox.style.display = 'none';
+        });
+    });
+</script>
 
 </body>
 </html>
